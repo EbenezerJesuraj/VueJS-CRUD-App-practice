@@ -2,8 +2,8 @@
 <!-- Modal for adding new customers -->
 <b-modal
     ref="create-customer-modal"
-    size="xl"
     hide-footer
+    size="xl"
     title="New Customer"
 >
 <create-customer-form
@@ -16,29 +16,29 @@
 <!-- Modal for updating customers -->
 <b-modal
     ref="edit-customer-modal"
-    size="xl"
     hide-footer
+    size="xl"
     title="Edit Customer"
 >
 <edit-customer-form
+    :customerId="customerId"
     @closeEditModal="closeEditModal"
     @reloadDataTable="getCustomerData"
     @showSuccessAlert="showAlertUpdate"
-    :customerId="customerId"
 ></edit-customer-form>
 </b-modal>
 
 <!-- Delete Customer Modal -->
 <b-modal
     ref="delete-customer-modal"
-    size="md"
     hide-footer
+    size="md"
     title="Confirm Deletion"
 >
 <delete-customer-modal
+    :customerId="customerId"
     @closeDeleteModal="closeDeleteModal"
     @reloadDataTable="getCustomerData"
     @showDeleteAlert="showDeleteSuccessModal"
-    :customerId="customerId"
 ></delete-customer-modal>
 </b-modal>

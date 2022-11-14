@@ -8,9 +8,9 @@
         <b-form-group id="first-name" label="First Name" label-for="first-name">
           <b-form-input
               id="first-name"
-              type="text"
-              placeholder="First Name"
               v-model="customer.contact_firstname"
+              placeholder="First Name"
+              type="text"
           ></b-form-input>
         </b-form-group>
       </b-col>
@@ -18,9 +18,9 @@
         <b-form-group id="last-name" label="Last Name" label-for="last-name">
           <b-form-input
               id="last-name"
-              type="text"
-              placeholder="Last Name"
               v-model="customer.contact_lastname"
+              placeholder="Last Name"
+              type="text"
           ></b-form-input>
         </b-form-group>
       </b-col>
@@ -30,9 +30,9 @@
         <b-form-group id="email" label="E-Mail" label-for="email">
           <b-form-input
               id="email"
-              type="email"
-              placeholder="example@crm.com"
               v-model="customer.contact_email"
+              placeholder="example@crm.com"
+              type="email"
           ></b-form-input>
         </b-form-group>
       </b-col>
@@ -49,9 +49,9 @@
         >
           <b-form-input
               id="company_name"
-              type="text"
-              placeholder="XYZ Industries"
               v-model="customer.company_name"
+              placeholder="XYZ Industries"
+              type="text"
           ></b-form-input>
         </b-form-group>
       </b-col>
@@ -65,8 +65,8 @@
         >
           <b-form-input
               id="acquired_on"
-              type="date"
               v-model="customer.acquired_on"
+              type="date"
           ></b-form-input>
         </b-form-group>
       </b-col>
@@ -76,16 +76,17 @@
           id="customer_status"
           v-model="customer.customer_status"
           name="customer-status"
-          value="active"
           unchecked-value="inactive"
+          value="active"
       >
         Customer is active
       </b-form-checkbox>
     </b-row>
     <b-row class="mt-4">
       <b-col cols="3">
-        <b-button variant="primary" class="px-5" @click="addNewCustomer"
-        >Add Customer</b-button
+        <b-button class="px-5" variant="primary" @click="addNewCustomer"
+        >Add Customer
+        </b-button
         >
       </b-col>
       <b-col>
