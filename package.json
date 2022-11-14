@@ -1,0 +1,7 @@
+{
+  "name": "VueJS-CRUD-App-practice",
+  "version": "1.0.0",
+  "devDependencies": {
+    "vue": "^3.2.45"
+  }
+}
