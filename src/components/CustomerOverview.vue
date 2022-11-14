@@ -3,11 +3,11 @@
     <b-row class="text-center">
       <b-col>
         <div
-            class="filter-card p-3"
             :class="{
             'bg-active-filter': totalIsActive,
             'bg-light': !totalIsActive,
           }"
+            class="filter-card p-3"
             @click="totalCustomersIsActiveFilter"
         >
           <h6>Total Customers</h6>
@@ -18,11 +18,11 @@
       </b-col>
       <b-col>
         <div
-            class="filter-card p-3"
             :class="{
             'bg-active-filter': activeIsActive,
             'bg-light': !activeIsActive,
           }"
+            class="filter-card p-3"
             @click="activeCustomersIsActiveFilter"
         >
           <h6 class="text-secondary">Active Customers</h6>
